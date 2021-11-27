@@ -5,9 +5,6 @@
 </template>
 
 <script>
-// import { db } from "../firebase";
-// import {} from "firebase/firestore";
-
 export default {
   data() {
     return {

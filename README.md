@@ -40,9 +40,10 @@ $ git clone https://github.com/ryosukemochizuki/vue3-intrduction-template.git &&
 
 - `App.vue`に`components/todoList.vue`をインポートする
 - 0 ベースで作ってみて下さい
-- どこまでこだわるかは自由ですが、デザインに集中するのは目的と違うのでやめて下さい
 
 ## 3. 2 で作った todolist のデータを localStorage から保存、取り出す
+
+- どこまでこだわるかは自由ですが、デザインに集中しすぎるのはやめること
 
 ## 4. todoList を firebasev9 を連携してみる(時間がある人)
 
