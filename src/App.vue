@@ -1,17 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <h1>{{ counter }}</h1>
+  <h2>{{ twiceNum }}</h2>
+  <button @click="plusButton"></button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { computed, ref } from "@vue/reactivity";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  setup() {
+    const counter = ref(0);
+    const plusButton = () => {
+      counter.value++;
+    };
+    const twiceNum = computed(() => {
+      return counter.value * 2;
+    });
+    return {
+      counter,
+      plusButton,
+      twiceNum,
+    };
+  },
+  // computed: {
+  //   twiceNum: function () {
+  //     return this.counter * 2;
+  //   },
+  // },
+};
 </script>
 
 <style>
